@@ -1,0 +1,46 @@
+<div class="panel row">
+    <h6>genaral</h6>
+    <div id="edit1">
+        <form id="form-genaral" ng-controller="form1Controller" class="col-sm-6">
+
+            <div class="form-group">
+                <label>title</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="form1.gen_title" ng-disabled="form1.editFlop[0]">
+                    <div class="input-group-addon" ng-click="setEditable(0)"><span class="glyphicon glyphicon-pencil"></span> </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>top description</label>
+                <input type="text" class="form-control" value="<?php ?>" ng-model="forms.form1.gen_description">
+            </div>
+            <div class="form-group">
+                <label>action text</label>
+                <input type="text" class="form-control" ng-model="forms.form1.gen_actionText">
+            </div>
+            <div class="form-group">
+                <label>service description</label>
+                <input type="text" class="form-control" ng-model="forms.form1.gen_serviceDescription">
+            </div>
+            <div class="form-group">
+                <label>services list</label>
+                <ul class="list-unstyled">
+                    <li><input type="text"/></li>
+                    <li><input type="text"/></li>
+                    <li><input type="text"/></li>
+                    <li><input type="text"/></li>
+                    <li><input type="text"/></li>
+                    <li><input type="text"/></li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label>latest work description</label>
+                <input type="text" class="form-control">
+            </div>
+            <div>
+                <input type="button" class="btn btn-success" value="save" ng-click="submit(1)"/>
+            </div>
+
+        </form>
+    </div>
+</div>
